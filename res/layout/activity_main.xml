@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+	android:background="@drawable/abc"
+     >
+
+    <Button 
+        android:id="@+id/start"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Start"
+        />
+   
+    <TextView
+        android:id="@+id/tsensor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start"
+        android:layout_below="@+id/start" />
+
+    <TextView
+        android:id="@+id/vtime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tsensor"
+        android:layout_below="@+id/tsensor"
+        android:text="00:00:00" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vtime"
+        android:layout_below="@+id/vtime"
+        android:layout_marginTop="17dp"
+        android:text="@string/Reset" />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/reset"
+        android:layout_below="@+id/reset"
+        android:layout_marginTop="18dp"
+     />
+
+    <Button
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/view"
+        android:layout_alignBottom="@+id/view"
+        android:layout_alignRight="@+id/view"
+        android:text="@string/Result" />
+
+</RelativeLayout>
